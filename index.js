@@ -11,7 +11,7 @@ app.use(express.json({
   }
 }));
 
-const SECRET = process.env.ZOOM_WEBHOOK_SECRET_TOKEN;
+const SECRET = process.env.7f1TTwxAQKqr5FIdqGmkLg;
 
 app.get("/", (req, res) => {
   res.send("Zoom Webhook is running");
