@@ -29,7 +29,7 @@ app.get("/", (req, res) => {
     body = req.body;
  
     if (typeof body === "string") {
-       res.send("Zoom Webhook is running");
+       res.send("Zoom Webhook is running 2");
     }
     res.send(body);
  
