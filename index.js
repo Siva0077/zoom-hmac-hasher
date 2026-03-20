@@ -29,13 +29,14 @@ app.post("/", (req, res) => {
     body = req.body;
  
     if (typeof body === "string") {
-       res.send("Zoom Webhook is running 2");
+       res.send("Zoom Webhook is running");
     }
     res.send(body);
  
   } catch (err) {
     return res.status(400).json({ error: "Invalid JSON from SFMC", raw: req.rawBody });
   }
+});
  
  
 app.listen(process.env.PORT || 4000, () =>
@@ -43,6 +44,4 @@ app.listen(process.env.PORT || 4000, () =>
   console.log("Zoom Webhook server running")
  
 );
- 
- 
  
