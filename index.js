@@ -20,7 +20,7 @@ app.use(express.json({
  
 const SECRET = process.env.ZOOM_WEBHOOK_SECRET_TOKEN;
  
-app.get("/", (req, res) => {
+app.post("/", (req, res) => {
    let body;
  
   // Parse rawbody if SFMC sends string
